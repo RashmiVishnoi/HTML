@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous">
+    <title>Assignment 5</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin:0;
+        padding:10px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.8rem;
+        background-color: #0d1117;
+        color:#afb7bf;
+    }
+    #main{
+        max-width: 350px;
+        margin: auto;
+    }
+    #header-logo{
+        text-align: center;
+        margin-top:25px;
+    }
+    .logo{
+        font-size:45px;
+        color:#c9d1d9;
+    }
+    .primary-h{
+        font-weight: 100;
+    }
+    #form{
+        border:2px solid #1e232a;
+        max-width: 325px;
+        margin:5px auto;
+        padding:25px;
+        padding-bottom: 20px;
+        background-color: #161b22;
+        border-radius: 5px;
+    }
+    
+    input{
+        width:100%;
+        margin:10px 0 20px 0;
+        border:none;
+        border-radius: 5px;
+        padding:5px;
+        height:35px;
+        background-color: #0d1117;
+        color:#afb7bf;
+        outline:1px;
+    }
+    button[type=submit]{
+        width:100%;
+        padding:5px;
+        height:35px;
+        border:none;
+        background-color:#238636;
+        cursor:pointer;
+        color:white;
+        border-radius:5px;
+    }
+    a.forgot-button{
+        float: right;
+        color:#4e91df;
+        text-decoration: none;
+    }
+    button[type=submit]:hover{
+        background-color: rgb(16, 99, 16);
+    }
+    #signup{
+        padding:5px;
+        border:2px solid #3c424b;
+        text-align: center;
+        margin:15px auto;
+        max-width:325px;
+        border-radius: 5px;
+    }
+    #other-links{
+        width: 279px;
+        margin:100px auto;
+        text-align: center;
+    }
+    a:not(.forgot-button,.logo){
+        color:#4e91df;
+        text-decoration: none;
+        padding:5px;
+    }
+    a:not(.forgot-button,.logo):hover{
+        text-decoration:underline;
+    }
+    input:focus{
+        box-shadow: 0 0 5px rgb(0, 115, 255);
+        border:2px solid rgb(100, 100, 255);
+    }
+    #gray{
+        color:gray;
+    }
+    #gray:hover{
+        color:#4e91df
+    }
+</style>
+  </head>
+  <body>
+    <div id="main">
+
+      <div id="header-logo">
+        <a href="#" class="logo"><i class="fab fa-github" ></i></a>
+        <h1 class="primary-h">Sign in to GitHub</h1>
+      </div>
+
+      <div id="form">
+        <form action="">
+          <label for="username">Username or email address</label><br />
+          <input type="text" id="username" autocomplete="off"/><br />
+          <label for="password">Password</label><a href="#" class="forgot-button">Forgot password?</a><br />
+          <input type="password" id="password" /><br /><br />
+          <button type="submit">Login</button>
+        </form>
+        
+    </div>
+    <div id="signup">
+        <p>New to Github?<a href="">Create an account</a>.</p>
+    </div>
+    <div id="other-links">
+        <a href="">Terms</a>
+        <a href="">Privacy</a>
+        <a href="">Security</a>
+        <a href="" id="gray">Contact GitHub</a>
+    </div>
+    </div>
+  </body>
+</html>
